@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shopping List</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <h3>Logo</h3>
+        <img id="hamburger" src="./assets/hamburgermenu_icon_white.svg" onclick="openSidebar()">
+    </header>
+    <div id="sidebar">
+        <p>Hehe funker dette?</p>
+    </div>
+	<div class="container">
+		<h1>Shopping List</h1>
+		<div class="form">
+			<input type="text" id="itemInput" placeholder="Enter item name">
+			<button onclick="addItem()">Add</button>
+		</div>
+		<ul id="itemList">
+		</ul>
+		<button id="saveButton" onclick="saveList()">Save List</button>
+		<div id="panel">
+			<h2>Saved Lists</h2>
+			<ul id="listPanel"></ul>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
